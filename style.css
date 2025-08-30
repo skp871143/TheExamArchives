@@ -297,3 +297,69 @@ h1 {
 .context-menu li:hover {
     background-color: var(--color-bg);
 }
+
+/* --- RESPONSIVE STYLES --- */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    header {
+        padding: 0.75rem 1rem;
+        min-height: 80px;
+    }
+
+    .header-logo {
+        left: 1rem;
+        width: 60px;
+        height: 60px;
+    }
+
+    .header-title-group {
+        margin: 0 4.5rem; /* Space for logo and button */
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-quote {
+        font-size: 0.8rem;
+        line-height: 1.2;
+    }
+
+    #theme-switcher {
+        right: 1rem;
+    }
+
+    main {
+        padding: 1rem;
+        align-items: flex-start; /* Align content to top on mobile */
+    }
+
+    .grid-container,
+    .subfolder-view {
+        padding: 1rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 1rem;
+    }
+
+    .subfolder-view-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* For smaller phones */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .header-quote {
+        display: none; /* Hide quote to save space */
+    }
+}
